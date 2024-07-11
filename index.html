@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon" href="imagens/faviconLogo.ico">
+    <style>
+        body{
+            background:#C0C0C0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif; /*Estilo da fonte*/
+            color: #000000; /*Cor das Letras*/
+            line-height: 1.5; /*Espaçamento entre as Linhas*/
+            font-size: 15px;
+        }
+        nav{
+            background: #D3D3D3;
+        }
+    </style>
+    <title>Links, Áudio e Vídeos</title>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="imagens/siteLinksLogo.webp" alt="Figura com o logo do site" width="15%">
+            <figcaption>Logo do Site</figcaption>
+        </figure>
+    </header>
+    <hr>
+    <nav id="inicio">
+        <ul>
+            <li>Página Inicial</li>
+            <li>Desenvolvimento Web
+                <ul>
+                    <a href="https://html.spec.whatwg.org/multipage/" target="_blank"><li>HTML 5</li></a>
+                    <a href="paginas/css3.html" target="_blank"><li>CSS 3</li></a>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Contatos</li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        Seção Principal da Página
+    </main>
+    <aside>
+        <audio src="audios/GwynSoundtrackAudio.mp3" controls>
+            <track kind="captions" src="foo.en.vtt" srclang="en" label="english">
+            O seu navegador não suporta o Áudio
+            <code>Áudio</code>
+        </audio>
+        <br>
+        <video src="videos/GwynBossFight.mp4" controls poster="../imagens/imageVideoGwynBossFight.png" height="30%" width="30%">
+            <track kind="captions" src="foo.en.vtt" srclang="en" label="english">
+        </video>
+        <br>
+        <a href="documentos/pdfLista.pdf" download="pdfLista.pdf" target="_blank">Baixar Arquivo</a>
+        <br>
+        <a href="#inicio">Inicio da Página</a>
+        <br>
+    </aside>
+    <hr>
+    <footer>
+        Desenvolvido por João Vitor Pereira Reche, 14 de março de 2024.
+    </footer>
+</body>
+</html>
